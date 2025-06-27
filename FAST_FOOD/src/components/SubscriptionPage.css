@@ -1,0 +1,24 @@
+.subscription-page {
+    min-height: 100vh;
+    background-color: #111827;
+  }
+  
+  .subscription-placeholder {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+    text-align: center;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  
+  .placeholder-text {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+  }
+  
+  .placeholder-subtext {
+    color: #9ca3af;
+  }

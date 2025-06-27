@@ -1,11 +1,11 @@
 import React from 'react'
-import SEACateringHomepage from './components/SEACateringHomepage'
+import SEACateringApp from './components/SEACateringApp'
 import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <SEACateringHomepage />
+      <SEACateringApp />
     </div>
   )
 }
