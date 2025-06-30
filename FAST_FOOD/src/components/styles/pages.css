@@ -1,0 +1,862 @@
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 4rem 0 2rem;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .page-description {
+    font-size: 1.125rem;
+    color: #d1d5db;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  
+  /* HomePage Styles */
+  .homepage {
+    background-color: #111827;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: #ffffff;
+    padding: 5rem 0;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-slogan {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #dbeafe;
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+    max-width: 48rem;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
+  }
+  
+  .hero-button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 0;
+    background-color: #1f2937;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    text-align: center;
+  }
+  
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #1e3a8a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  
+  .feature-icon svg {
+    height: 2rem;
+    width: 2rem;
+    color: #60a5fa;
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-description {
+    color: #9ca3af;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 4rem 0;
+    background-color: #111827;
+  }
+  
+  .testimonial-carousel {
+    max-width: 4rem;
+    margin: 0 auto 3rem;
+  }
+  
+  .testimonial-card {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+    position: relative;
+  }
+  
+  .testimonial-content {
+    text-align: center;
+  }
+  
+  .testimonial-stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .star {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0 0.125rem;
+  }
+  
+  .star-filled {
+    color: #fbbf24;
+    fill: currentColor;
+  }
+  
+  .star-empty {
+    color: #9ca3af;
+  }
+  
+  .testimonial-message {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    color: #60a5fa;
+    font-weight: 600;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #60a5fa;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: color 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    color: #93c5fd;
+  }
+  
+  .carousel-prev {
+    left: 1rem;
+  }
+  
+  .carousel-next {
+    right: 1rem;
+  }
+  
+  /* Testimonial Form */
+  .testimonial-form-container {
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .testimonial-form-card {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .testimonial-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: #374151;
+    color: #ffffff;
+    border: 1px solid #4b5563;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-select:focus {
+    outline: none;
+    border-color: #60a5fa;
+  }
+  
+  .form-textarea {
+    height: 6rem;
+    resize: vertical;
+  }
+  
+  .form-submit {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* MenuPage Styles */
+  .menu-page {
+    min-height: 100vh;
+    background-color: #111827;
+  }
+  
+  .meal-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .meal-plan-card {
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #374151;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .meal-plan-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-image {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #60a5fa;
+    margin-bottom: 0.25rem;
+  }
+  
+  .plan-price-idr {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-description {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .plan-details-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plan-details-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .plan-subscribe-btn {
+    background-color: #059669;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plan-subscribe-btn:hover {
+    background-color: #047857;
+  }
+  
+  /* SubscriptionPage Styles */
+  .subscription-page {
+    min-height: 100vh;
+    background-color: #111827;
+  }
+  
+  .user-info {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #1e3a8a;
+    border-radius: 0.5rem;
+    border: 1px solid #1d4ed8;
+  }
+  
+  .logged-in-as {
+    color: #dbeafe;
+    font-size: 0.875rem;
+  }
+  
+  .auth-required {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+  }
+  
+  .auth-icon {
+    height: 4rem;
+    width: 4rem;
+    color: #60a5fa;
+    margin: 0 auto 2rem;
+  }
+  
+  .auth-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-message {
+    color: #d1d5db;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .success-message {
+    background-color: #059669;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .success-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscription-form-container {
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .required {
+    color: #ef4444;
+  }
+  
+  .form-hint {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  
+  .form-input.error,
+  .form-textarea.error {
+    border-color: #ef4444;
+  }
+  
+  .error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Plan Selection */
+  .plan-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .plan-option {
+    padding: 1rem;
+    border: 1px solid #4b5563;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .plan-option:hover {
+    border-color: #6b7280;
+  }
+  
+  .plan-option.selected {
+    border-color: #60a5fa;
+    background-color: #1e3a8a;
+  }
+  
+  .plan-option-image {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-option-name {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .plan-option-price {
+    color: #60a5fa;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-option-description {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  /* Checkbox Grid */
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .checkbox-option {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #4b5563;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .checkbox-option:hover {
+    border-color: #6b7280;
+  }
+  
+  .checkbox-option.selected {
+    border-color: #60a5fa;
+    background-color: #1e3a8a;
+  }
+  
+  .checkbox-input {
+    display: none;
+  }
+  
+  .checkbox-label {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  /* Day Selection */
+  .day-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .day-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid #4b5563;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .day-option:hover {
+    border-color: #6b7280;
+  }
+  
+  .day-option.selected {
+    border-color: #60a5fa;
+    background-color: #1e3a8a;
+  }
+  
+  .day-input {
+    display: none;
+  }
+  
+  .day-label {
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Price Summary */
+  .price-summary {
+    background-color: #374151;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #4b5563;
+  }
+  
+  .summary-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .price-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    color: #d1d5db;
+  }
+  
+  .price-value {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .price-divider {
+    height: 1px;
+    background-color: #4b5563;
+    margin: 0.75rem 0;
+  }
+  
+  .price-row.total {
+    font-size: 1.125rem;
+  }
+  
+  .total-label {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .total-value {
+    font-weight: bold;
+    color: #60a5fa;
+    font-size: 1.25rem;
+  }
+  
+  .price-placeholder {
+    color: #9ca3af;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Subscriptions List */
+  .subscriptions-list {
+    margin-top: 3rem;
+  }
+  
+  .list-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subscriptions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .subscription-card {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+  }
+  
+  .subscription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-plan {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .subscription-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .subscription-status.active {
+    background-color: #059669;
+    color: #ffffff;
+  }
+  
+  .subscription-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .detail-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .detail-value {
+    color: #d1d5db;
+    font-weight: 500;
+  }
+  
+  .detail-price {
+    color: #60a5fa;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  .subscription-allergies {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #374151;
+  }
+  
+  /* ContactPage Styles */
+  .contact-page {
+    min-height: 100vh;
+    background-color: #111827;
+  }
+  
+  .contact-card {
+    max-width: 32rem;
+    margin: 0 auto 4rem;
+  }
+  
+  .contact-content {
+    background-color: #1e3a8a;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1d4ed8;
+    text-align: center;
+  }
+  
+  .contact-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: #1e40af;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .contact-icon svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #60a5fa;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-info {
+    margin: 1.5rem 0;
+  }
+  
+  .contact-item {
+    margin-bottom: 0.75rem;
+  }
+  
+  .contact-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .contact-phone {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-phone:hover {
+    color: #93c5fd;
+  }
+  
+  .contact-message {
+    margin-top: 1.5rem;
+  }
+  
+  .contact-message p {
+    color: #d1d5db;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .service-card {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0,5,0, 0.1);
+  }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, MapPin, Clock, Users, Utensils, Truck, Star, ChevronLeft, ChevronRight } from 'lucide-react';
-import './HomePage.css';
+import { sanitizeInput } from '../../utils/security';
 
 const HomePage = ({ setCurrentPage, testimonials, setTestimonials }) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -15,7 +15,9 @@ const HomePage = ({ setCurrentPage, testimonials, setTestimonials }) => {
     if (testimonialForm.name && testimonialForm.message) {
       const newTestimonial = {
         id: testimonials.length + 1,
-        ...testimonialForm
+        name: sanitizeInput(testimonialForm.name),
+        message: sanitizeInput(testimonialForm.message),
+        rating: testimonialForm.rating
       };
       setTestimonials([...testimonials, newTestimonial]);
       setTestimonialForm({ name: '', message: '', rating: 5 });

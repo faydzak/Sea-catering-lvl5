@@ -1,5 +1,5 @@
 import React from 'react'
-import SEACateringApp from './components/SEACateringApp'
+import SEACateringApp from './components/pages/SEAcateringapp'
 import './App.css'
 
 function App() {
