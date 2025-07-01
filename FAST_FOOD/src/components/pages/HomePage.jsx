@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, MapPin, Clock, Users, Utensils, Truck, Star, ChevronLeft, ChevronRight } from 'lucide-react';
-import { sanitizeInput } from '../../utils/security';
+import { sanitizeInput } from '../utils/security';
 
 const HomePage = ({ setCurrentPage, testimonials, setTestimonials }) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);

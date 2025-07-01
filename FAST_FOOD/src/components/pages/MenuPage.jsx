@@ -1,5 +1,5 @@
 import React from 'react';
-import { SubscriptionService } from '../../services/subscriptionService';
+import { SubscriptionService } from '../service/subscriptionService';
 
 const MenuPage = ({ 
   mealPlans, 

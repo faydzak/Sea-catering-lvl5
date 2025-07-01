@@ -1,0 +1,772 @@
+.user-dashboard {
+    min-height: 100vh;
+    background-color: #111827;
+  }
+  
+  .no-subscriptions {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+  }
+  
+  .no-subscriptions h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .no-subscriptions p {
+    color: #9ca3af;
+    margin-bottom: 2rem;
+  }
+  
+  .create-subscription-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-subscription-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .subscriptions-dashboard {
+    margin-top: 2rem;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  .subscription-dashboard-card {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subscription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-plan {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .subscription-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .subscription-status.active {
+    background-color: #059669;
+    color: #ffffff;
+  }
+  
+  .subscription-status.paused {
+    background-color: #f59e0b;
+    color: #1f2937;
+  }
+  
+  .subscription-status.cancelled {
+    background-color: #ef4444;
+    color: #ffffff;
+  }
+  
+  .subscription-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .detail-label {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .detail-value {
+    color: #d1d5db;
+    font-weight: 500;
+  }
+  
+  .detail-price {
+    color: #60a5fa;
+    font-weight: bold;
+  }
+  
+  .pause-info {
+    background-color: #f59e0b;
+    color: #1f2937;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    margin-top: 1rem;
+  }
+  
+  .pause-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .subscription-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  .pause-btn {
+    background-color: #f59e0b;
+    color: #1f2937;
+  }
+  
+  .pause-btn:hover {
+    background-color: #d97706;
+  }
+  
+  .cancel-btn {
+    background-color: #ef4444;
+    color: #ffffff;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #dc2626;
+  }
+  
+  .reactivate-btn {
+    background-color: #059669;
+    color: #ffffff;
+  }
+  
+  .reactivate-btn:hover {
+    background-color: #047857;
+  }
+  
+  .cancelled-text {
+    color: #9ca3af;
+    font-style: italic;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 50;
+  }
+  
+  .modal-content {
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    max-width: 32rem;
+    width: 100%;
+    border: 1px solid #374151;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .modal-close {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.3s ease;
+  }
+  
+  .modal-close:hover {
+    color: #ffffff;
+  }
+  
+  .modal-body {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .modal-description {
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+  }
+  
+  .date-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    color: #d1d5db;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: #374151;
+    color: #ffffff;
+    border: 1px solid #4b5563;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #60a5fa;
+  }
+  
+  .warning-message {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .warning-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex-shrink: 0;
+  }
+  
+  .modal-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  
+  .confirm-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .confirm-btn.danger {
+    background-color: #ef4444;
+  }
+  
+  .confirm-btn.danger:hover {
+    background-color: #dc2626;
+  }
+  
+  .cancel-btn {
+    background: none;
+    color: #9ca3af;
+    border: 1px solid #4b5563;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cancel-btn:hover {
+    color: #ffffff;
+    border-color: #6b7280;
+  }
+  
+  /* Admin Dashboard Styles */
+  .admin-dashboard {
+    min-height: 100vh;
+    background-color: #111827;
+  }
+  
+  .date-range-selector {
+    margin-bottom: 2rem;
+  }
+  
+  .date-range-card {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .date-icon {
+    height: 2rem;
+    width: 2rem;
+    color: #60a5fa;
+  }
+  
+  .date-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .date-inputs {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .date-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .date-group label {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .date-input {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: #374151;
+    color: #ffffff;
+    border: 1px solid #4b5563;
+    transition: border-color 0.3s ease;
+  }
+  
+  .date-input:focus {
+    outline: none;
+    border-color: #60a5fa;
+  }
+  
+  .date-info {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .metric-card {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .metric-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .metric-icon {
+    height: 2rem;
+    width: 2rem;
+    color: #60a5fa;
+  }
+  
+  .metric-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #d1d5db;
+    text-align: center;
+  }
+  
+  .metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .metric-subtitle {
+    font-size: 0.75rem;
+    color: #9ca3af;
+  }
+  
+  .metric-card.new-subs .metric-icon,
+  .metric-card.growth .metric-icon {
+    color: #10b981;
+  }
+  
+  .metric-card.mrr .metric-icon {
+    color: #f59e0b;
+  }
+  
+  .metric-card.reactivations .metric-icon {
+    color: #8b5cf6;
+  }
+  
+  .admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-card {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #60a5fa;
+    margin-right: 0.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .users-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .table-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #d1d5db;
+    border-bottom: 1px solid #4b5563;
+    padding-bottom: 0.5rem;
+  }
+  
+  .table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #d1d5db;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #374151;
+  }
+  
+  .user-name {
+    color: #ffffff;
+  }
+  
+  .user-role.admin {
+    color: #f59e0b;
+    font-weight: 600;
+  }
+  
+  .user-role.user {
+    color: #10b981;
+  }
+  
+  .stats-box {
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: 0.375rem;
+  }
+  
+  .stats-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-label {
+    color: #d1d5db;
+    font-size: 0.875rem;
+  }
+  
+  .stat-value.total {
+    color: #60a5fa;
+    font-weight: bold;
+  }
+  
+  .stat-value.admin {
+    color: #f59e0b;
+    font-weight: bold;
+  }
+  
+  .stat-value.user {
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .stat-value.active {
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .stat-value.paused {
+    color: #f59e0b;
+    font-weight: bold;
+  }
+  
+  .stat-value.cancelled {
+    color: #ef4444;
+    font-weight: bold;
+  }
+  
+  .subscriptions-summary {
+    margin-bottom: 1.5rem;
+  }
+  
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #374151;
+    border-radius: 0.375rem;
+  }
+  
+  .summary-label {
+    color: #d1d5db;
+    font-size: 0.875rem;
+  }
+  
+  .summary-value {
+    font-weight: bold;
+  }
+  
+  .revenue-summary {
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: 0.375rem;
+  }
+  
+  .revenue-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .revenue-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .revenue-label {
+    color: #d1d5db;
+    font-size: 0.875rem;
+  }
+  
+  .revenue-value {
+    color: #f59e0b;
+    font-weight: bold;
+  }
+  
+  .recent-subscriptions {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .no-data {
+    color: #9ca3af;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .subscriptions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .subscription-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #374151;
+    border-radius: 0.375rem;
+  }
+  
+  .subscription-info h4 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .subscription-info p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .subscription-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+  
+  .status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .status.active {
+    background-color: #059669;
+    color: #ffffff;
+  }
+  
+  .status.paused {
+    background-color: #f59e0b;
+    color: #1f2937;
+  }
+  
+  .status.cancelled {
+    background-color: #ef4444;
+    color: #ffffff;
+  }
+  
+  .price {
+    color: #60a5fa;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .metrics-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .admin-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .date-inputs {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .table-header,
+    .table-row {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    
+    .summary-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .subscription-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .subscription-details {
+      align-items: flex-start;
+    }
+  }

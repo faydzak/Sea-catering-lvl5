@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Lock } from 'lucide-react';
-import { SubscriptionService } from '../../services/subscriptionService';
-import { validateSubscriptionForm } from '../../utils/validation';
-import { MEAL_TYPE_OPTIONS, DELIVERY_DAY_OPTIONS } from '../../utils/constants';
+import { SubscriptionService } from '../service/subscriptionService';
+import { validateSubscriptionForm } from '../utils/validation';
+import { MEAL_TYPE_OPTIONS, DELIVERY_DAY_OPTIONS } from '../utils/constants';
 
 const SubscriptionPage = ({ 
   mealPlans, 

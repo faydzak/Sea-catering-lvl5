@@ -1,6 +1,6 @@
 import { hashPassword } from '../utils/security';
 
-export const mealPlans = [
+const mealPlans = [
   {
     id: 1,
     name: "Diet Plan",
@@ -33,7 +33,7 @@ export const mealPlans = [
   }
 ];
 
-export const initialTestimonials = [
+const initialTestimonials = [
   {
     id: 1,
     name: "Sarah Johnson",
@@ -54,7 +54,7 @@ export const initialTestimonials = [
   }
 ];
 
-export const initialUsers = [
+const initialUsers = [
   {
     id: 1,
     fullName: 'Admin User',
@@ -64,3 +64,12 @@ export const initialUsers = [
     createdAt: new Date().toISOString()
   }
 ];
+
+const subscriptions = [];
+
+export default {
+  mealPlans,
+  testimonials: initialTestimonials,
+  users: initialUsers,
+  subscriptions
+};
